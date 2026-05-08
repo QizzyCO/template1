@@ -82,25 +82,24 @@ export default function Footer() {
                 <Phone className="text-white/40" size={20} />
                 <a href="tel:+628976777669" className="text-white/60 hover:text-white transition-colors">0897 6777 669</a>
               </li>
-              <li className="flex gap-4 items-center">
-                <Mail className="text-white/40" size={20} />
-                <a href="mailto:hello@jastygarden.com" className="text-white/60 hover:text-white transition-colors">hello@jastygarden.com</a>
-              </li>
             </ul>
           </address>
 
           <div>
-            <h4 className="text-xl font-serif font-bold mb-8 text-white">Buletin</h4>
-            <p className="text-white/60 mb-6">Berlangganan untuk mendapatkan pembaruan terbaru dan penawaran spesial.</p>
-            <div className="relative">
-              <input 
-                type="email" 
-                placeholder="Email Anda" 
-                className="w-full px-6 py-4 rounded-2xl bg-white/5 border border-white/10 focus:ring-2 focus:ring-white/50 outline-none text-white"
-              />
-              <button className="absolute right-2 top-2 bottom-2 bg-white text-secondary px-4 rounded-xl hover:bg-white/90 transition-all btn-interaction">
-                Ikuti
-              </button>
+            <h4 className="text-xl font-serif font-bold mb-8 text-white">Sosial Media</h4>
+            <p className="text-white/60 mb-6">Ikuti kami di media sosial untuk mendapatkan pembaruan terbaru.</p>
+            <div className="flex gap-4">
+              {socialIcons.map(({ Icon, href }, i) => (
+                <a 
+                  key={i} 
+                  href={href} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-white/10 hover:text-white transition-all btn-interaction border border-white/10"
+                >
+                  <Icon size={20} />
+                </a>
+              ))}
             </div>
           </div>
         </div>

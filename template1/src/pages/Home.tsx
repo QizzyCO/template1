@@ -12,12 +12,12 @@ export default function Home() {
     <main>
       <Hero />
       <GallerySection />
-      <Menu />
       <SocialVideoSection />
       <TestimonialsCarousel />
       <FindUs />
       <WorkItemsSection />
       <LocationSection />
+      <Menu />
     </main>
   );
 }

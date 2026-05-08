@@ -22,14 +22,14 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-5xl mx-auto"
         >
-          <div className="flex items-center justify-center gap-2 mb-4 md:mb-6">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-2 mb-4 md:mb-6">
             <div className="flex text-accent">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="w-3.5 h-3.5 md:w-4 md:h-4" fill="currentColor" />
               ))}
             </div>
-            <span className="text-[10px] md:text-xs font-semibold uppercase tracking-widest opacity-80 text-white">
-              Kopi Pilihan & Suasana Asri
+            <span className="text-[10px] md:text-xs font-semibold uppercase tracking-widest opacity-80 text-white text-center">
+              rumah makan garden dan vanue wedding
             </span>
           </div>
           
